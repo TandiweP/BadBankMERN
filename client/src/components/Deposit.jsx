@@ -1,24 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from "react";
 import Card from './Card'
 
 export default function Deposit(){
     const [show, setShow]                       = useState(true);
     const [status, setStatus]                   = useState('')
-    const [deposit, setDeposit]     = useState('');
-    const [account, setAccount] = useState({});
+    const [deposit, setDeposit]                 = useState('');
+    const [account, setAccount]                 = useState({});
     const email = localStorage.getItem('email');
-    const loggedIn = localStorage.getItem('email') != null;
-    const navigate = useNavigate();
-
-
-  useEffect(() => {
-    if (!loggedIn) 
-      navigate("/login");
-    else {
-      console.log("status: loggedin")
-    }
-  }, []);
+    
 
     function getAccount() {
       const url = `/account/find/${email}`;
