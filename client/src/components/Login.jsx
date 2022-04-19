@@ -43,7 +43,6 @@ export default function Login(props){
       setShow(true);
     }
 
-    
   
     return (
       <Card
