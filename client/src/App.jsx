@@ -3,6 +3,13 @@ import { React, useState } from 'react';
 import {Routes,  Route} from "react-router-dom";
 import   Navbar from './components/Navbar';
 import ContextProvider from './components/context';
+// import  Home  from './components/home';
+// import  CreateAccount  from './components/CreateAccount';
+// import  Deposit  from './components/Deposit';
+// import  Withdraw  from './components/Withdraw';
+// import  Login  from './components/Login';
+// import  Logout  from './components/Logout';
+// import  AllData  from './components/AllData';
 import CurrencyConverter from './components/currency/Currency'
 
 import {
@@ -23,11 +30,9 @@ export default function App() {
 
   const handleLogin = () => {
     setLoggedIn(true);
-    
   }
   const handleLogout = () => {
     setLoggedIn(false);
-     
   }
 
   return (
