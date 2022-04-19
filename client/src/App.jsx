@@ -23,11 +23,11 @@ export default function App() {
 
   const handleLogin = () => {
     setLoggedIn(true);
-    console.log("User {loggedIn});
+    
   }
   const handleLogout = () => {
     setLoggedIn(false);
-     console.log("User {loggedIn});
+     
   }
 
   return (
