@@ -60,14 +60,6 @@ export default function CreateAccount(){
     })();
   }    
   
-    
-    function clearForm(){
-      setName('');
-      setEmail('');
-      setPassword('');
-      setShow(true);
-    }
-  
     return (
       <Card
         id = "CardGroup"
