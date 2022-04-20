@@ -12,7 +12,7 @@ export default function Login(props){
     function handleLogin(){
       if (!validate(email, 'email')) return;
       if (!validate(password, 'password')) return;
-      const url = `https://billieporterfullstackbank.herokuapp.com//account/login/${email}/${password}`;
+      const url = `/account/login/${email}/${password}`;
       (async () => {
       var res = await fetch(url, { method: 'POST' });
       if (res.status === 200) {
