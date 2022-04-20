@@ -49,7 +49,7 @@ export default function CreateAccount(){
       if (!passwordLength(password, 'password')) return;
       const url = `/account/create/${name}/${email}/${password}/`;
       (async () => {
-        var res  = await fetch(url, {method: 'POST'});
+        var res  = await fetch(url);
         if (res.status === 200) {
             var data = await res.json();    
             console.log(data);        
