@@ -28,6 +28,7 @@ class Navbar extends React.Component {
                             
                             <li id="nav4" className="nav-item"><Link className="nav-link" title="Logout" to="/Logout">Logout</Link></li>
                             <li id="xtra" className="nav-item"><Link className="nav-link" title="Currency Converter" to="/Currency/">Currency Converter</Link></li>
+                              <li id="nav3" className="nav-item" ><Link className="nav-link" title="View User Data" to="/Alldata/">AllData</Link></li> 
                       
                       </ul>
                   
